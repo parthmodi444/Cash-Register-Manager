@@ -1,0 +1,29 @@
+.container
+{
+    display:flex;
+    flex-direction:column;
+ 
+    justify-content:center;
+    max-width:100%;
+    align-items:center;
+    color:blueviolet;
+
+
+}
+button
+{
+    width:10%;
+    margin:1rem 0rem 1rem 0rem;
+    padding:1rem;
+    background-color:blueviolet;
+    color:white;
+    border-radius: 2px;
+}
+input
+{
+    max-width: 40%;
+}
+table,td,th
+{
+    border:1px solid black;
+}
