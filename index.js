@@ -25,6 +25,8 @@ for(var i=0;i<availableNotes.length;i=i+1)
 checkButton.addEventListener("click",function validateBillandCashAmount()
 {
 
+    alert(billAmount.value);
+    alert(cashGiven.value);
     message.style.display="none";
     if(isNaN(billAmount.value) || isNaN(cashGiven.value) )
     {
@@ -32,19 +34,20 @@ checkButton.addEventListener("click",function validateBillandCashAmount()
     }
     else if(billAmount.value >0)    
     {
-        if(cashGiven.value >= billAmount.value )
+        if(parseInt(cashGiven.value) < parseInt(billAmount.value ))
         {
-            alert("hii seema");
-            var amountToBeReturned=cashGiven.value-billAmount.value;
-            calculateChange(amountToBeReturned);
-
-
+            
+            showMessage("Do u wanna wash Plates");
         }
 
         else
         {
 
-            showMessage("Do u wanna wash plates");
+            alert("hii seema");
+            var amountToBeReturned=cashGiven.value-billAmount.value;
+            calculateChange(amountToBeReturned);
+
+           
         }
 
 
