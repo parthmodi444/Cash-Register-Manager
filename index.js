@@ -25,8 +25,7 @@ for(var i=0;i<availableNotes.length;i=i+1)
 checkButton.addEventListener("click",function validateBillandCashAmount()
 {
 
-    alert(billAmount.value);
-    alert(cashGiven.value);
+
     message.style.display="none";
     if(isNaN(billAmount.value) || isNaN(cashGiven.value) )
     {
@@ -43,7 +42,7 @@ checkButton.addEventListener("click",function validateBillandCashAmount()
         else
         {
 
-            alert("hii seema");
+         
             var amountToBeReturned=cashGiven.value-billAmount.value;
             calculateChange(amountToBeReturned);
 
